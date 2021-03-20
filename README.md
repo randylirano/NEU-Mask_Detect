@@ -7,6 +7,7 @@ Secondary customer representative: Aushee Khamesra (khamesra.a@northeastern.edu)
 Team Member Names and IDs:
 
 Zihao Qiu (Khoury ID: whatcat)
+
 Randy Lirano (Khoury ID: randylirano)
 
 Julia Rakas (Khoury ID: jrakas)
@@ -18,6 +19,5 @@ Aushee Khamesra (Khoury ID: akhamesra)
 Jinyang Zheng (Khoury ID: pagenotfound91)
 
 Shruthi Raghuraman (Khoury ID: )
-
 Robert Dragomir (Khoury ID: )
 
