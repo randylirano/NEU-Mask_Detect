@@ -18,6 +18,7 @@ Aushee Khamesra (Khoury ID: akhamesra)
 
 Jinyang Zheng (Khoury ID: pagenotfound91)
 
-Shruthi Raghuraman (Khoury ID: )
+*Shruthi Raghuraman (Khoury ID: )
+
 Robert Dragomir (Khoury ID: )
 
