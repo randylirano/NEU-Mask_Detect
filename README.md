@@ -5,9 +5,13 @@ Primary customer representative: Randy Lirano (lirano.r@northeastern.edu)
 Secondary customer representative: Aushee Khamesra (khamesra.a@northeastern.edu)
 
 Team Member Names and IDs:
+
 *Zihao Qiu (Khoury ID: whatcat)
+
 *Randy Lirano (Khoury ID: randylirano)
+
 *Julia Rakas (Khoury ID: jrakas)
+
 *Yuqi Tao (Khoury ID: gavintao1219)
 *Aushee Khamesra (Khoury ID: akhamesra)
 *Jinyang Zheng (Khoury ID: pagenotfound91)
