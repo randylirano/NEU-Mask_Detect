@@ -2,9 +2,11 @@
 Summary: The aim of this project is to explore the application of Artificial Intelligence (AI) in image classification. The team will build a web application using a Covid-19 facemask dataset. The dataset will have two distinct labels (with_mask vs without_mask). The model will be trained using the dataset to detect if someone entering some premises is properly using their face masks.
 
 Primary customer representative: 
+
 Randy Lirano (lirano.r@northeastern.edu)
 
 Secondary customer representative: 
+
 Aushee Khamesra (khamesra.a@northeastern.edu)
 
 Team Member Names and IDs:
