@@ -23,7 +23,7 @@ Team Member Names and IDs:
 
 * Jinyang Zheng (Khoury ID: pagenotfound91)
 
-* Shruthi Raghuraman (Khoury ID: )
+* Shruthi Raghuraman (Khoury ID: sraghuraman1)
 
-* Robert Dragomir (Khoury ID: )
+* Robert Dragomir (Khoury ID: rgdragomir)
 
