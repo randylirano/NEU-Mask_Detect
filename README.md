@@ -12,6 +12,10 @@ Secondary customer representative:
 
 Aushee Khamesra (khamesra.a@northeastern.edu)
 
+Scrum master:
+
+Zihao Qiu (qiu.ziha@northeastern.edu)
+
 ### Team Member Names and IDs:
 
 Web Development Team:
