@@ -1,13 +1,10 @@
 # import necessary packages
 # pandas framework for csv file reading
-import pathlib
-
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-import os
 from sklearn.model_selection import train_test_split
-
+from tensorflow.keras import layers
 
 # read the csv file
 labels = pd.read_csv('data/train_labels_cleaned.csv')
@@ -15,86 +12,77 @@ labels = pd.read_csv('data/train_labels_cleaned.csv')
 
 # select binary labels only and rename them
 binary_labels = labels[['filename', 'label (0/1)']]
+label_only = labels[['label (0/1)']]
 binary_labels = binary_labels.rename(columns={'label (0/1)': 'label'})
 
 # concatenate the path name with the file name
-
 data_dir = 'data/images/'
 filepath = [[filename, data_dir + filename] for filename in labels['filename']]
 # print(file_paths)
 
 # save the paths to a pandas dataframe
-pd_filepath = pd.DataFrame(filepath, columns=['filename', 'filepaths'])
+pd_filepath = pd.DataFrame(filepath, columns=['filename', 'filepath'])
 # print(pd_filepath.head())
 
+# this data table contains file name, file path, and labels
 data = pd.merge(pd_filepath, binary_labels, how='inner', on='filename')
 
-# train, test, validation split, with a random seed of 42
-# train_val_set, test_set = train_test_split(data, test_size=0.1, random_state=42)
-# train_set, val_set = train_test_split(train_val_set, test_size=0.2, random_state=42)
-image_data = []
 
-# pip install pillow
-import PIL
-from PIL import Image
-image = tf.keras.preprocessing.image.load_img('data')
+# print(data.head())
 
+# convert an image file to an array
+def decode_img(img):
+    # https://www.tensorflow.org/api_docs/python/tf/io/decode_jpeg
+    # please see the above link for the following function: tf.image.decode_jpeg
+    img = tf.image.decode_jpeg(img, channels=3)
+    # uniform the picture size, this parameter can be changed
+    return tf.image.resize(img, [100, 100])
 
-
-
-
-
-
-"""
-# for i in range(len(data)):
-
-import cv2
-image_size = 100      # image size taken is 100 here. one can take other size too
-for i in range(len(data)):
-    img_array = cv2.imread(data['filepaths'][i], cv2.IMREAD_GRAYSCALE)  # converting the image to gray scale
-
-    new_img_array = cv2.resize(img_array, (image_size, image_size))      # resizing the image array
-    # print(new_img_array)
-    # encoding the labels. with_mask = 1 and without_mask = 0
-    if data['label'][i] == 1:
-        image_data.append([new_img_array, 1])
-    else:
-        image_data.append([new_img_array, 0])
-
-# print(data[0])
-
-image_data = np.array(image_data)
-np.random.shuffle(image_data)
-
+# x is the array of images
 x = []
+# y is the array of labels
 y = []
-for image in image_data:
-  x.append(image[0])
-  y.append(image[1])
 
-# converting x & y to numpy array as they are list
-x = np.array(x)
+# iterate through the data table
+for index, row in data.iterrows():
+    # read image according the filepath
+    img = tf.io.read_file(row['filepath'])
+    # decode, than convert to numpy format
+    img = decode_img(img).numpy()
+    # read label
+    label = row['label']
+    # append them to the arrays
+    x.append(img)
+    y.append(label)
+
+# convert x, y to numpy arrays
 y = np.array(y)
+x = np.array(x)
 
-x = x / 255
+# train, validation split
+# no test data since we will use real images as our test data
+# random_state=42, 42 is the golden standard for random seed
+x_train, x_val, y_train, y_val = train_test_split(x, y, test_size=0.2, random_state=42)
 
-X_train, X_val, y_train, y_val = train_test_split(x,y,test_size=0.3, random_state = 42)
-
+# model, the items in this part can be changed
+# to improve the model, feel feel to adjust/add/delete the following layers
 model = tf.keras.Sequential([
-    tf.keras.layers.Flatten(input_shape=(100, 100)),    # flattening the image
-    tf.keras.layers.Dense(100, activation='relu'),
-    tf.keras.layers.Dense(50, activation='relu'),
-    tf.keras.layers.Dense(1, activation='sigmoid')
+    layers.experimental.preprocessing.Rescaling(1. / 255),
+    layers.Conv2D(32, 3, activation='relu'),
+    layers.MaxPooling2D(),
+    layers.Conv2D(32, 3, activation='relu'),
+    layers.MaxPooling2D(),
+    layers.Conv2D(32, 3, activation='relu'),
+    layers.MaxPooling2D(),
+    layers.Flatten(),
+    layers.Dense(128, activation='relu'),
+    layers.Dense(1, activation='sigmoid')
 ])
 
+# not sure about the loss function, it can be changed
 model.compile(optimizer='adam',
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-model.fit(X_train, y_train, epochs=10, batch_size = 20)
-
-model.evaluate(X_val, y_val)
-"""
-
-
-
+# epochs can be changed
+model.fit(x_train, y_train, validation_data=(x_val, y_val), epochs=3)
