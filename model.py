@@ -86,3 +86,4 @@ model.compile(optimizer='adam',
 
 # epochs can be changed
 model.fit(x_train, y_train, validation_data=(x_val, y_val), epochs=3)
+model.save("model_save")
