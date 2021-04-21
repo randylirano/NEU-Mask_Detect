@@ -1,4 +1,4 @@
-# Grading for assignment-5-project-fitness_pal
+# Grading for assignment-5-project-mask_detect
 **Class:** 2021SPCS5500SB<br>
 **Date:** 2021-04-13<br>
 **Grader:** pgust
