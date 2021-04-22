@@ -1,27 +1,39 @@
-# MaskDetect
+# project-mask_detect
+Summary: The aim of this project is to explore the application of Artificial Intelligence (AI) in image classification. The team will build a web application using a Covid-19 facemask dataset. The dataset will have two distinct labels (with_mask vs without_mask). The model will be trained using the dataset to detect if someone entering some premises is properly using their face masks.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+Communiation plan location: 2021SPCS5500SB/project-mask_detect/docs/communiation_plan.pdf
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Primary customer representative:
 
-## Code scaffolding
+Randy Lirano (lirano.r@northeastern.edu)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Secondary customer representative:
 
-## Build
+Aushee Khamesra (khamesra.a@northeastern.edu)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Scrum master:
 
-## Running unit tests
+Zihao Qiu (qiu.ziha@northeastern.edu)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Team Member Names and IDs:
 
-## Running end-to-end tests
+Web Development Team:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Randy Lirano (Khoury ID: randylirano)
 
-## Further help
+* Julia Rakas (Khoury ID: jrakas)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Shruthi Raghuraman (Khoury ID: sraghuraman1)
+
+* Jinyang Zheng (Khoury ID: pagenotfound91)
+
+Python Development Team
+
+* Zihao Qiu (Khoury ID: whatcat)
+
+* Aushee Khamesra (Khoury ID: akhamesra)
+
+* Yuqi Tao (Khoury ID: gavintao1219)
+
+* Robert Dragomir (Khoury ID: rgdragomir)
