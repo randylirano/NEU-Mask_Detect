@@ -4,11 +4,11 @@ Summary: The aim of this project is to explore the application of Artificial Int
 Communiation plan location: 2021SPCS5500SB/project-mask_detect/docs/communiation_plan.pdf
 
 
-Primary customer representative: 
+Primary customer representative:
 
 Randy Lirano (lirano.r@northeastern.edu)
 
-Secondary customer representative: 
+Secondary customer representative:
 
 Aushee Khamesra (khamesra.a@northeastern.edu)
 
