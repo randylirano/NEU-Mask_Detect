@@ -1,0 +1,27 @@
+.center-div {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.center-text {
+  text-align: center;
+}
+.card {
+    width: 150px;
+    height: 150px;
+    background: url("https://picsum.photos/id/237/536/354") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:hover {
+    width: 150px;
+    height: 150px;
+    background: url("https://picsum.photos/seed/picsum/536/354") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div {
+  column-gap: 40px;
+}
