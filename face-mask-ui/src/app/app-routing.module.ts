@@ -9,8 +9,8 @@ import { ConnectComponent } from './connect/connect.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: StoryComponent },
-  { path: 'story', component: AboutComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'story', component: StoryComponent },
   { path: 'product', component: ProductComponent },
   { path: 'connect', component: ConnectComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
