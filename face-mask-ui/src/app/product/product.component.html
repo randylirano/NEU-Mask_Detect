@@ -1,2 +1,23 @@
 <p>Feel free to look at our instagram for progress on our product!</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h3>Upload Photos</h3>
+      <div class="form-group">
+        <input type="file" name="image" (change)="onFileSelected($event)" />
+      </div>
+
+      <div class="image-preview mb-3" *ngIf="previewUrl">
+        <img [src]="previewUrl" height="300" />
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary"  (click)="onFileUploaded()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
 <img src="http://127.0.0.1:5000/video_feed" width="100%">
+
