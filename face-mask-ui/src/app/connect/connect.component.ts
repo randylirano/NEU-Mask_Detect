@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation, Inject  } from '@angular/core';
+import {DOCUMENT} from '@angular/common';
 
 @Component({
   selector: 'app-connect',
   templateUrl: './connect.component.html',
-  styleUrls: ['./connect.component.css']
+  styleUrls: ['./connect.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
-export class ConnectComponent implements OnInit {
+export class ConnectComponent implements OnInit, OnDestroy {
 
-  constructor() { }
+  constructor( @Inject(DOCUMENT) private _document ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this._document.body.classList.add('connectbody-color');
   }
+
+  ngOnDestroy() {
+  // remove the class form body tag
+  this._document.body.classList.remove('connectbody-color');
+}
 
 }
