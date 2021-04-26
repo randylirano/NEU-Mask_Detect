@@ -11,6 +11,8 @@ import { ProductComponent } from './product/product.component';
 import { ConnectComponent } from './connect/connect.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { VideoCaptureComponentComponent } from './video-capture-component/video-capture-component.component';
+import { UploadImageComponentComponent } from './upload-image-component/upload-image-component.component';
 
 
 
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     StoryComponent,
     AboutComponent,
     ProductComponent,
-    ConnectComponent
+    ConnectComponent,
+    VideoCaptureComponentComponent,
+    UploadImageComponentComponent
   ],
   imports: [
     BrowserModule,
