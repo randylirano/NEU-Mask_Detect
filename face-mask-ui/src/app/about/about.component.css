@@ -1,4 +1,14 @@
-.center-div {
+.aboutbody-color {
+    background-color: #5a6064;
+}
+
+.page-text {
+  color: #EFFDFE;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* .center-div {
   margin: auto;
   width: 60%;
   padding: 10px;
@@ -24,4 +34,4 @@
 }
 div {
   column-gap: 40px;
-}
+} */
