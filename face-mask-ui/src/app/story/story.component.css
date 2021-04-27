@@ -8,25 +8,145 @@
   font-weight: bold;
 }
 
-
-.card {
+.shruthi {
     width: 150px;
     height: 150px;
-    background: url("https://picsum.photos/id/237/536/354") no-repeat;
+    background: url('../../assets/shruthi-mask.jpeg') no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%
 }
-.card:hover {
+.shruthi:hover {
     width: 150px;
     height: 150px;
-    background: url("https://picsum.photos/seed/picsum/536/354") no-repeat;
+    background: url('../../assets/shruthi-nomask.jpeg') no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-/* 
+.julia {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/julia-mask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%
+}
+.julia:hover {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/julia-nomask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.randy {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/randy-mask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%
+}
+.randy:hover {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/randy-nomask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.steve {
+    width: 150px;
+    height: 150px;
+    background: url('https://www.fillmurray.com/460/300') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%
+}
+.steve:hover {
+    width: 150px;
+    height: 150px;
+    background: url('https://www.fillmurray.com/140/200') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.zihao {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/zihao-mask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%
+}
+.zihao:hover {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/zihao-nomask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aushee {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/aushee-mask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%
+}
+.aushee:hover {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/aushee-nomask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.yuqi {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/yuqi-mask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%
+}
+.yuqi:hover {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/yuqi-nomask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.robert {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/robert-mask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%
+}
+.robert:hover {
+    width: 150px;
+    height: 150px;
+    background: url('../../assets/robert-nomask.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*
 div {
   column-gap: 40px;
 } */

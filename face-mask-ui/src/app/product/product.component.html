@@ -1,7 +1,15 @@
-<p>
-  <a [routerLink]="['image']">Upload image</a> |
-  <a [routerLink]="['video']">Test real-time capture</a>
-</p>
+
+<div class = "center-text">
+  <p>
+    <a [routerLink]="['image']">
+      <button type="button" class="btn btn-dark rounded-pill">Upload image</button>
+    </a> |
+    <a [routerLink]="['video']">
+      <button type="button" class="btn btn-dark rounded-pill">Test real-time capture</button>
+    </a>
+  </p>
+</div>
+
 
 <div class="container">
   <router-outlet></router-outlet>

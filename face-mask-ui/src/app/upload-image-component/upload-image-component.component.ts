@@ -38,7 +38,7 @@ export class UploadImageComponentComponent implements OnInit {
     this.http.post('http://localhost:5000/uploader', formData)
       .subscribe(res => {
         console.log(res);
-        alert('SUCCESS !!');
+        alert('KATI says...');
         this.result = res["status"]
       })
   }
