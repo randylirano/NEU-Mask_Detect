@@ -9,6 +9,7 @@ import {HttpClient} from '@angular/common/http';
 export class UploadImageComponentComponent implements OnInit {
   fileData: File = null;
   previewUrl:any = null;
+  result: string;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -34,10 +35,11 @@ export class UploadImageComponentComponent implements OnInit {
   onFileUploaded() {
     const formData = new FormData();
     formData.append('file', this.fileData);
-    this.http.post('http://localhost:5000/image', formData)
+    this.http.post('http://localhost:5000/uploader', formData)
       .subscribe(res => {
         console.log(res);
         alert('SUCCESS !!');
+        this.result = res["status"]
       })
   }
 }
