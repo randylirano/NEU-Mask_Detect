@@ -7,6 +7,9 @@ Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 
 Our project website: https://kati-test.herokuapp.com/home
 
+Python model file is in the main directory: model.py
+Python model test is also in the main directory: model_test.py
+
 Primary customer representative:
 
 Randy Lirano (lirano.r@northeastern.edu)
