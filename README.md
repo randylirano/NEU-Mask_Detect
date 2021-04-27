@@ -3,6 +3,9 @@ Summary: The aim of this project is to explore the application of Artificial Int
 
 Communiation plan location: 2021SPCS5500SB/project-mask_detect/docs/communiation_plan.pdf
 
+Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
+
+Our project website: https://kati-test.herokuapp.com/home
 
 Primary customer representative:
 
