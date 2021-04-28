@@ -6,9 +6,8 @@ Communiation plan location: project-mask_detect/docs/communiation_plan.pdf
 Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 
 Our project website: https://kati-test.herokuapp.com/home
- 
- 
- 
+*****************************************************************
+
 Python model file is in the main directory: model.py
 
 It is the main product of the Python team
@@ -22,18 +21,17 @@ Python test files can be found in project-mask_detect/test
 Documentation files can be found in project-mask_detect/docs
 
 Dataset files can be fount in project-mask_detect/data
- 
- 
- 
-Primary customer representative:
+*****************************************************************
+
+### Primary customer representative:
 
 Randy Lirano (lirano.r@northeastern.edu)
 
-Secondary customer representative:
+### Secondary customer representative:
 
 Aushee Khamesra (khamesra.a@northeastern.edu)
 
-Scrum master:
+### Scrum master:
 
 Zihao Qiu (qiu.ziha@northeastern.edu)
 
