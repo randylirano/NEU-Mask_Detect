@@ -62,3 +62,26 @@ Python Development Team
 * Yuqi Tao (Khoury ID: gavintao1219)
 
 * Robert Dragomir (Khoury ID: rgdragomir)
+
+### How to deploy locally
+
+1. Clone our repo
+`git clone `https://github.ccs.neu.edu/2021SPCS5500SB/project-mask_detect
+2. Go into main repo folder
+`cd project-mask_detect`
+##### Start Backend
+
+1. Install all dependencies
+`pip install -r requirements.txt`
+2. Start flask backend
+`env FLASK_APP=api.py FLASK_ENV=development flask run`
+
+##### Start Frontend
+
+1. Open a new terminal window and navigate to project-mask_detect folder. On mac `command + t` buttons will open a new terminal window.
+2. `cd frontend/face-mask-ui/`
+3. Install package.json
+`npm install`
+4. Run angular app
+`ng serve --open`
+5. App should be running on http://localhost:4200/home
