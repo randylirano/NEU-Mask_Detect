@@ -96,6 +96,6 @@ Python Development Team
 
 1. Please make sure you have Python installed on your computer, version 3.0+ is recommended. 
 2. If you also have an IDE installed, you can run the py file in IDE, or you can run it on Command Prompt(Windows)/Terminal(Mac).
-3. To run it on terminal, first navigate to the directory
-4. Type "python model.py" on your terminal
-5. It will execute the Ppython code. 
+3. To run it on terminal, first navigate to the directory.
+4. Type "python model.py" on your terminal.
+5. It will execute the Python code. 
