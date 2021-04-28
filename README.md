@@ -3,7 +3,7 @@ Summary: The aim of this project is to explore the application of Artificial Int
 
 Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 
-Our project website: https://kati-test.herokuapp.com/home
+Our project website: https://kati-test.herokuapp.com/home (NOTE: this is a deployment of our v1. We are currently deploying v2 and will update here once that is completed.)
 *****************************************************************
 
 Project Presentation: https://docs.google.com/presentation/d/1sTcCYiBKFWlrjT4pddgZiX_TwxC-wOCFopDVOP0r5Ho/edit#slide=id.p
