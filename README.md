@@ -18,7 +18,7 @@ It is the main product of the Python team
 
 Demo video link: https://www.youtube.com/watch?v=uYRLCniw4dk
 
-A Jupyter Notebook can be found in project-mask_detect/docs/facemask_detection_model_demo.ipynb
+A Jupyter Notebook can be found in project-mask_detect/facemask_detection_model_demo.ipynb
 
 It serves as the file for demonstration purpose
 
