@@ -14,11 +14,13 @@ cors = CORS(app)
 
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-camera = cv2.VideoCapture(0)  # use 0 for web camera
-#  for cctv camera use rtsp://username:password@ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp' instead of camera
-# for local webcam use cv2.VideoCapture(0)
+# This flask backend was done loosely following this tutorial:
+# https://towardsdatascience.com/video-streaming-in-web-browsers-with-opencv-flask-93a38846fe00
 
-# convert an image file to an array
+ # use 0 for web camera (or look at OpenCV documentation for cctv input)
+camera = cv2.VideoCapture(0)
+
+# Helper function for process_frame
 def decode_img(img):
     # https://www.tensorflow.org/api_docs/python/tf/io/decode_jpeg
     # please see the above link for the following function: tf.image.decode_jpeg
@@ -26,24 +28,25 @@ def decode_img(img):
     # uniform the picture size, this parameter can be changed
     return tf.image.resize(img, [100, 100])
 
-def process_frame():  # generate frame by frame from camera
+# Helper function for video_feed that generate frame by frame from camera
+def process_frame():
+
+    #retrieve model from Python team
     model = tf.keras.models.load_model("model_save")
     status = ""
     while True:
-        # Capture frame-by-frame
-        success, frame = camera.read()  # read the camera frame
+        # Capture frame-by-frame from camera
+        success, frame = camera.read()
 
         if not success:
             break
         else:
             font = cv2.FONT_HERSHEY_SIMPLEX
 
-            # Use putText() method for
-            # inserting text on video
+            # Use putText() method for inserting text on video
             cv2.putText(frame, status,(50, 50),font, 1,(0, 255, 255),2, cv2.LINE_4)
 
             color = cv2.cvtColor(frame, cv2.COLOR_BGR2BGRA)
-
 
             # save the image continuously on local disk
             cv2.imwrite('data/captured_images/c1.jpg', frame)
@@ -66,45 +69,57 @@ def process_frame():  # generate frame by frame from camera
             else:
                 status = "No mask"
 
+            #convert image format to streaming data for network transmission
             ret, buffer = cv2.imencode('.jpg', frame)
             images = buffer.tobytes()
+
+            #Keep generating the frame as image is sent to frontend
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + images + b'\r\n')  # concat frame one by one and show result
 
-
+# Endpoint for livestream feature
 @app.route('/video_feed')
 def getVideo():
-    #Video streaming route. Put this in the src attribute of an img tag
+    #Returns a stream of images that can be displayed on a web page with multipart responses
     return Response(process_frame(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-
+# Endpoint for upload image feature
 @app.route('/uploader', methods = ['GET', 'POST'])
 @cross_origin()
 def upload_file():
+
     result = {}
+
+    #retrieve model from Python team
     model = tf.keras.models.load_model("model_save")
+
+    # Access uploaded file from files dictionary in request object
     f = request.files['file']
-    sfname = 'data/captured_images/'+str(secure_filename(f.filename))
-    f.save(sfname)
-    # filename = 'c1.jpg'
+
+    # Save filename to local
+    file_name = 'data/captured_images/'+str(secure_filename(f.filename))
+    f.save(file_name)
+
+    # read the image
     tf_file = tf.io.read_file(os.path.join("data/captured_images", str(secure_filename(f.filename))))
+
+    # decode the image and store in a numpy array
     img = decode_img(tf_file).numpy()
+
+    # Create a batch
     img = (np.expand_dims(img, 0))
 
+    # predict the image and return prediction
     prob = model.predict(img)
     if prob[0][0] > 0.9:
         status = "With mask"
     else:
         status = "No mask"
     result["status"] = status
+
     return result
 
-@app.route('/video_feed')
-def video_feed():
-    #Video streaming route. Put this in the src attribute of an img tag
-    return Response(video_feed(), mimetype='multipart/x-mixed-replace; boundary=frame')
-
-# This was to test api call with Flask and an html template
+# This was to test api call with Flask and an html template in templates folder
 # @app.route('/upload')
 # @cross_origin()
 # def upload():
