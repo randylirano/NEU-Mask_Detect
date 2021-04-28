@@ -85,3 +85,9 @@ Python Development Team
 4. Run angular app
 `ng serve --open`
 5. App should be running on http://localhost:4200/home
+
+### How to Run Demo Notebook
+
+1. Install Jupyter Notebook on your local machine. To install, put "pip install notebook" in your on Command Prompt(Windows)/Terminal(Mac). 
+2. In Command Prompt(Windows)/Terminal(Mac), type "jupyter notebook" to launch the notebook. It should be opened in the browser. 
+3. Find the location of the demo jupyter notebook, and run the cells one by one.
