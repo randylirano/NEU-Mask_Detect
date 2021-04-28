@@ -1,25 +1,39 @@
 # project-mask_detect
 Summary: The aim of this project is to explore the application of Artificial Intelligence (AI) in image classification. The team will build a web application using a Covid-19 facemask dataset. The dataset will have two distinct labels (with_mask vs without_mask). The model will be trained using the dataset to detect if someone entering some premises is properly using their face masks.
 
-Communiation plan location: 2021SPCS5500SB/project-mask_detect/docs/communiation_plan.pdf
-
 Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 
 Our project website: https://kati-test.herokuapp.com/home
+*****************************************************************
+
+Our Trello task management page: https://trello.com/b/Wj24hcVg/facemask-project
+
+Communiation plan location: project-mask_detect/docs/communiation_plan.pdf
 
 Python model file is in the main directory: model.py
 
-Python model test is also in the main directory: model_test.py
+It is the main product of the Python team
 
-Primary customer representative:
+A Jupyter Notebook can be found in project-mask_detect/docs/facemask_detection_model_demo.ipynb
+
+It serves as the file for demonstration purpose
+
+Python test files can be found in project-mask_detect/test
+
+Documentation files can be found in project-mask_detect/docs
+
+Dataset files can be fount in project-mask_detect/data
+*****************************************************************
+
+### Primary customer representative:
 
 Randy Lirano (lirano.r@northeastern.edu)
 
-Secondary customer representative:
+### Secondary customer representative:
 
 Aushee Khamesra (khamesra.a@northeastern.edu)
 
-Scrum master:
+### Scrum master:
 
 Zihao Qiu (qiu.ziha@northeastern.edu)
 
