@@ -71,8 +71,8 @@ Python Development Team
 `cd project-mask_detect`
 ##### Start Backend
 
-1. Install all dependencies
-`pip install -r requirements.txt`
+1. Install all dependencies (make sure you have pip or pip3 installed)
+`pip3 install -r requirements.txt`
 2. Start flask backend
 `env FLASK_APP=api.py FLASK_ENV=development flask run`
 
