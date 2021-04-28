@@ -6,6 +6,8 @@ Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 Our project website: https://kati-test.herokuapp.com/home
 *****************************************************************
 
+Our Trello task management page: https://trello.com/b/Wj24hcVg/facemask-project
+
 Communiation plan location: project-mask_detect/docs/communiation_plan.pdf
 
 Python model file is in the main directory: model.py
