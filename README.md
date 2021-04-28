@@ -1,12 +1,12 @@
 # project-mask_detect
 Summary: The aim of this project is to explore the application of Artificial Intelligence (AI) in image classification. The team will build a web application using a Covid-19 facemask dataset. The dataset will have two distinct labels (with_mask vs without_mask). The model will be trained using the dataset to detect if someone entering some premises is properly using their face masks.
 
-Communiation plan location: project-mask_detect/docs/communiation_plan.pdf
-
 Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 
 Our project website: https://kati-test.herokuapp.com/home
 *****************************************************************
+
+Communiation plan location: project-mask_detect/docs/communiation_plan.pdf
 
 Python model file is in the main directory: model.py
 
