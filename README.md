@@ -6,6 +6,8 @@ Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 Our project website: https://kati-test.herokuapp.com/home
 *****************************************************************
 
+Project Presentation: https://docs.google.com/presentation/d/1sTcCYiBKFWlrjT4pddgZiX_TwxC-wOCFopDVOP0r5Ho/edit#slide=id.p
+
 Our Trello task management page: https://trello.com/b/Wj24hcVg/facemask-project
 
 Communiation plan location: project-mask_detect/docs/communiation_plan.pdf
