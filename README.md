@@ -7,9 +7,27 @@ Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 
 Our project website: https://kati-test.herokuapp.com/home
 
+
+
+
 Python model file is in the main directory: model.py
 
-Python model test is also in the main directory: model_test.py
+It is the main product of the Python team
+
+A Jupyter Notebook can be found in docs/facemask_detection_model_demo.ipynb
+
+It serves as the file for demonstration purpose
+
+Python test files can be found in project-mask_detect/test
+
+Documentation files can be found in project-mask_detect/docs
+
+Dataset files can be fount in project-mask_detect/data
+
+
+
+
+
 
 Primary customer representative:
 
