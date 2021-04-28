@@ -14,6 +14,9 @@ cors = CORS(app)
 
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+# This flask backend was done loosely following this tutorial:
+# https://towardsdatascience.com/video-streaming-in-web-browsers-with-opencv-flask-93a38846fe00
+
  # use 0 for web camera (or look at OpenCV documentation for cctv input)
 camera = cv2.VideoCapture(0)
 
