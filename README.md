@@ -6,7 +6,9 @@ Follow us on Instagram: https://www.instagram.com/kati.maskdetect/
 Our project website: https://kati-test.herokuapp.com/home (NOTE: this is a deployment of our v1. We are currently deploying v2 and will update here once that is completed.)
 *****************************************************************
 
-Project Presentation: https://docs.google.com/presentation/d/1sTcCYiBKFWlrjT4pddgZiX_TwxC-wOCFopDVOP0r5Ho/edit#slide=id.p
+Project Presentation Slides: https://docs.google.com/presentation/d/1sTcCYiBKFWlrjT4pddgZiX_TwxC-wOCFopDVOP0r5Ho/edit#slide=id.p
+
+Project Presentation Slides PDF: project-mask_detect/docs/Project_Presentation.pdf
 
 Our Trello task management page: https://trello.com/b/Wj24hcVg/facemask-project
 
